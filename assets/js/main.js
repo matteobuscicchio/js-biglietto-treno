@@ -1,4 +1,4 @@
-// Nome utente
+// nome utente
 var userName = prompt("Salve, qual è il suo nome?");
 console.log(userName);
 
@@ -20,18 +20,19 @@ console.log(fullPrice);
 
 
 
-// va applicato uno sconto del 20% per i minorenni
+// va applicato uno sconto del 20% per i minorenni; del 40% per gli over 65
+if (userAge < 18) {
+  var lowPriceDiscount = (fullPrice * 80) /100;
+  var finalPrice = lowPriceDiscount;
+} else if (userAge > 65) {
+  var highPriceDiscount = (fullPrice * 60) /100;
+  var finalPrice = highPriceDiscount;
+}
+else {
+  var standardPrice = fullPrice;
+  var finalPrice = fullPrice;
+}
 
-
-// va applicato uno sconto del 40% per gli over 65
-
-
-
-
-
-
-
-
-
-// Sulla base di queste informazioni dovrà calcolare il prezzo totale del viaggio, secondo queste regole:
-//  il prezzo del biglietto è definito in base ai km (0.21 € al km)
+console.log(lowPriceDiscount);
+console.log(highPriceDiscount);
+console.log(standardPrice);
