@@ -56,4 +56,4 @@ console.log("€" + finalPrice);
 
 
 
-document.getElementById('price').innerHTML = "€" + finalPrice;
+document.getElementById('price').innerHTML = "Gentilissim* " + userName +" il prezzo del suo biglietto corrisponde ad un totale di €" + finalPrice;
