@@ -6,6 +6,9 @@
 }
 /* /reset/ */
 body{
-  background-color: black;
-  color: white;
+  background-color: gray;
+}
+.container{
+  background-color: lightgray;
+  text-align: center;
 }
