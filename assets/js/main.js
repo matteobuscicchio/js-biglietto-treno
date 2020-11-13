@@ -2,9 +2,10 @@
 var userName = prompt("Salve, qual è il suo nome?");
 
 // età del passeggero
-var yearOfBirth = parseInt(prompt("Gentilissim* " + userName + " In che anno è nato?"));
+var userAge = parseInt(prompt("Gentilissim* " + userName + " Quanti anni hai?"));
 var currentYear = 2020;
-var userAge = currentYear - yearOfBirth;
+var yearOfBirth = currentYear - userAge;
+console.log(yearOfBirth);
 
 // numero di chilometri che vuole percorrere
 var userKm = parseInt(prompt(userName + " quanti Km intende coprire?"));
