@@ -21,6 +21,10 @@ console.log(fullPrice);
 
 
 // va applicato uno sconto del 20% per i minorenni; del 40% per gli over 65
+// function myFunction() {
+//   var finalPrice;
+// }
+
 if (userAge < 18) {
   var lowPriceDiscount = (fullPrice * 80) /100;
   var finalPrice = lowPriceDiscount;
@@ -36,3 +40,8 @@ else {
 console.log(lowPriceDiscount);
 console.log(highPriceDiscount);
 console.log(standardPrice);
+console.log("€" + finalPrice);
+
+
+
+// document.getElementById('price').innerHTML = "£ " + finalPrice;
