@@ -15,10 +15,10 @@ var ticketPrice = 0.21;
 var fullPrice = ticketPrice * userKm;
 
 // va applicato uno sconto del 20% per i minorenni; del 40% per gli over 65
-if (userAge < 18) {
+if (yearOfBirth > 2002) {
   var lowPriceDiscount = (fullPrice * 80) /100; //sconto 20%
   var finalPrice = lowPriceDiscount;
-} else if (userAge > 65) {
+} else if (yearOfBirth < 1956) {
   var highPriceDiscount = (fullPrice * 60) /100; //sconto 40%
   var finalPrice = highPriceDiscount;
 }
