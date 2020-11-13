@@ -2,13 +2,22 @@
 var userName = prompt("Salve, qual è il suo nome?");
 console.log(userName);
 
-// e l'età del passeggero.
-var userAge = parseInt(prompt("Gnetilissim* " + userName + " In che anno è nato?"));
+// età del passeggero
+var yearOfBirth = parseInt(prompt("Gentilissim* " + userName + " In che anno è nato?"));
+console.log(yearOfBirth);
+var currentYear = 2020;
+var userAge = currentYear - yearOfBirth;
 console.log(userAge);
 
-// Il programma dovrà chiedere all'utente il numero di chilometri che vuole percorrere e l'età del passeggero.
-var userKm = prompt("" + userName + " quanti Km intendi percorrere?");
+// numero di chilometri che vuole percorrere
+var userKm = parseInt(prompt(userName + " quanti Km intende coprire?"));
 console.log(userKm);
+
+// prezzo senza sconto
+var ticketPrice = 0.21;
+var fullPrice = ticketPrice * userKm;
+console.log(fullPrice);
+
 
 
 // va applicato uno sconto del 20% per i minorenni
