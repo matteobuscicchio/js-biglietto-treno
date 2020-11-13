@@ -44,4 +44,4 @@ console.log("€" + finalPrice);
 
 
 
-// document.getElementById('price').innerHTML = "£ " + finalPrice;
+// document.getElementById('price').innerHTML = "€" + finalPrice;
